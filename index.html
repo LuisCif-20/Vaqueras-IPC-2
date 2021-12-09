@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Practica</title>
+    <meta charset="UTF-8">
+    <link href="./estilos.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="login">
+                <div class="barra"></div>
+                <p class="menu">Login</p>
+            </li>
+            <li id="registro">
+                <div class="barra"></div>
+                <p class="menu">Registro</p>
+            </li>
+            <li id="ingreso">
+                <div class="barra"></div>
+                <p class="menu">Ingresar Clientes</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="formulario">
+        <div id="form-login">
+            <label>Ingresa tu usuario</label>
+            <br>
+            <input type="text" id="usuario">
+            <br>
+            <br>
+            <label>Ingresa tu contraseña</label>
+            <br>
+            <input type="password" id="contraseñal">
+            <br>
+            <br>
+            <button id="botonlogin" onclick="mostrarlogin()">Iniciar Secion</button>
+        </div>
+        <div id="form-registro">
+            <label>Ingresa tu correo electronico: </label>
+            <input type="email" id="correo">
+            <br>
+            <br>
+            <label>Ingresa tu nombre: </label>
+            <input type="text" id="nombre">
+            <br>
+            <br>
+            <label>Ingresa una contraseña: </label>
+            <input type="password" id="contraseñar">
+            <label>Confirma la constraseña: </label>
+            <input type="password" id="contraseñar1">
+            <br>
+            <br>
+            <button id="botonregistro" onclick="mostrarregistro()">Registrar</button>
+        </div>
+        <div id="form-ingreso">
+            <label>Ingresa el nombre del cliente: </label>
+            <input type="text" id="nombrec">
+            <label>Ingresa el apellido del cliente: </label>
+            <input type="text" id="apellido">
+            <br>
+            <br>
+            <label>Ingresa el numero de CUI del cliente: </label>
+            <input type="text" id="CUI">
+            <br>
+            <br>
+            <label>Ingresa la direccion del cliente: </label>
+            <input type="text" id="direccion">
+            <br>
+            <br>
+            <button id="botoningreso" onclick="mostraringresoc()">Ingresar Cliente</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
